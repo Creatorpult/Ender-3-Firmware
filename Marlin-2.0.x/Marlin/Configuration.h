@@ -757,9 +757,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   5000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)
@@ -791,7 +791,7 @@
  *   http://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-  #define JUNCTION_DEVIATION_MM 0.03  // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.222 // (mm) Distance from real junction edge
 #endif
 
 /**
@@ -931,11 +931,11 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, -9, 2 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 2 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define MIN_PROBE_EDGE 15
+#define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1334,8 +1334,8 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (60*60)
-#define HOMING_FEEDRATE_Z  (32*60)
+#define HOMING_FEEDRATE_XY (20*60)
+#define HOMING_FEEDRATE_Z  (4*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
