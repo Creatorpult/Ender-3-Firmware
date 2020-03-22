@@ -34,14 +34,14 @@
  * Verbose version identifier which should contain a reference to the location
  * from where the binary was downloaded or the source code was compiled.
  */
-#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "Creatorpult Build v0.1.1a"
+#define DETAILED_BUILD_VERSION SHORT_BUILD_VERSION "Creatorpult Build v0.1.2"
 
 /**
  * The STRING_DISTRIBUTION_DATE represents when the binary file was built,
  * here we define this default string as the date where the latest release
  * version was tagged.
  */
-#define STRING_DISTRIBUTION_DATE "3/4/2020"
+#define STRING_DISTRIBUTION_DATE "3/10/2020"
 
 /**
  * Defines a generic printer name to be output to the LCD after booting Marlin.
